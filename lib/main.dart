@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './models/data_layer.dart';
+import './views/plan_screen.dart';
 
 void main() => runApp(MasterPlanApp());
 
