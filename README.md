@@ -1,4 +1,4 @@
-# Praktikum Flutter — Hello World & Widget Dasar  
+# Praktikum Flutter — Dasar State Management
 
 **Mata Kuliah:** Pemrograman Mobile  
 **Nama:** Kartika Tri Juliana  
@@ -108,8 +108,14 @@
 
 ## 🧠 Tugas 2 
 
-1. Kerjakan seluruh langkah praktikum kemudian dokumentasikan hasil akhirnya dalam bentuk GIF beserta penjelasan** pada file `README.md`.  
-   Jika terdapat error, perbaiki hingga program berjalan dengan baik.  
+1. Kerjakan seluruh langkah praktikum kemudian dokumentasikan hasil akhirnya dalam bentuk GIF beserta penjelasan** pada file `README.md`. Jika terdapat error, perbaiki hingga program berjalan dengan baik.  
+= pada hasil akhir terjadi error dan perlu dilakukan perbaikan
+perbaikan 1 : tambahkan kode ini pada `data_layer.dart`
+![week 10](images/23.png)
+![week 10](images/24.png)
+
+perbaikan 2 : kemudian inisiasikan import pada main `plan_screen.dart`
+![week 10](images/25.png)
 
 2. Jelaskan mana yang dimaksud `InheritedWidget` pada langkah 1 tersebut! Mengapa yang digunakan `InheritedNotifier`?  
 
