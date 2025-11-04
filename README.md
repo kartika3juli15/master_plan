@@ -63,12 +63,21 @@
 1. Kerjakan seluruh langkah praktikum kemudian dokumentasikan hasil akhirnya dalam bentuk GIF beserta penjelasan** pada file `README.md`. Jika terdapat error, perbaiki hingga program berjalan dengan baik.  
 
 2. Jelaskan maksud dari langkah 4! Mengapa file `data_layer.dart` dibuat dan apa fungsinya?  
+= File data_layer.dart dibuat sebagai file penghubung (barrel file) yang meng-export beberapa model (plan.dart dan task.dart) supaya saat file lain membutuhkan model tersebut, cukup mengimpor satu file saja
 
 3. Jelaskan tujuan variabel `plan` pada langkah 6! Mengapa variabel tersebut dibuat sebagai konstanta?  
+= Variabel plan digunakan untuk menyimpan data rencana yang akan ditampilkan pada PlanScreen. Variabel tersebut dibuat sebagai const karena datanya tidak berubah, sehingga lebih efisien dan menghemat memori.
 
-4. Lakukan *capture* hasil langkah 9 dalam bentuk GIF! Jelaskan fungsi widget `_buildTaskTile` dan bagaimana hasilnya bekerja.  
+4. Lakukan *capture* hasil langkah 9 dalam bentuk GIF! Jelaskan fungsi widget `_buildTaskTile` dan bagaimana hasilnya bekerja. 
+= pada hasil nya adalah memunculkan task dimana, jika task tersebut tercentang maka muncul task telah selesai dari beberapa task
+![week 10](images/14.png)
 
 5. Apa kegunaan method pada langkah 11 dan 13 dalam lifecycle state? Jelaskan fungsi dari *Scroll Listener* dan `dispose()` dalam pengelolaan *Stateful Widget*.  
+= Langkah 11 (Scroll Listener – initState())
+Digunakan untuk menjalankan kode saat widget pertama kali dibuat. Scroll Listener berfungsi memantau pergerakan scroll dan menjalankan aksi tertentu setiap kali user melakukan scroll.
+
+Langkah 13 (dispose())
+Dipanggil ketika widget dihapus dari layar. Fungsi dispose() digunakan untuk membersihkan resource seperti scrollController agar tidak terjadi kebocoran memori (memory leak).
 
 6. Kumpulkan laporan praktikum dalam bentuk link commit atau repository GitHub ke dosen sesuai ketentuan.  
 
@@ -127,3 +136,45 @@ perbaikan 2 : kemudian inisiasikan import pada main `plan_screen.dart`
 
 ---
  
+## Praktikum 3: Membuat State di Multiple Screens
+
+### Langkah-langkah Praktikum  
+
+1. **Langkah 1:** Edit PlanProvider
+
+2. **Langkah 2:** Edit main.dart
+
+3. **Langkah 3:** Edit plan_screen.dart
+
+4. **Langkah 4:** Error
+
+5. **Langkah 5:** Tambah getter Plan
+
+6. **Langkah 6:** Method initState()
+
+7. **Langkah 7:** Widget build
+
+8. **Langkah 8:** Edit _buildTaskTile
+
+9. **Langkah 9:** Buat screen baru
+
+10. **Langkah 10:** Pindah ke class _PlanCreatorScreenState
+
+11. **Langkah 11:** Pindah ke method build
+
+12. **Langkah 12:** Buat widget _buildListCreator
+
+13. **Langkah 13:** Buat void addPlan()
+
+14. **Langkah 14:** Buat widget _buildMasterPlans()
+
+
+## 🧠 Tugas 3 
+
+1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada yang error atau tidak berjalan dengan baik, silakan diperbaiki sesuai dengan tujuan aplikasi tersebut dibuat.  
+
+2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
+
+3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+4. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke dosen yang telah disepakati !  
