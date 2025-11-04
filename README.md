@@ -127,8 +127,10 @@ perbaikan 2 : kemudian inisiasikan import pada main `plan_screen.dart`
 ![week 10](images/25.png)
 
 2. Jelaskan mana yang dimaksud `InheritedWidget` pada langkah 1 tersebut! Mengapa yang digunakan `InheritedNotifier`?  
+= InheritedNotifier dipilih karena dapat mengirimkan data sekaligus pemberitahuan perubahan ke widget lain secara otomatis, tanpa perlu setState(). Cocok untuk kasus seperti Plan Provider yang datanya bisa berubah dan perlu di-update ke UI.
 
 3. Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
+= Data kemajuan (progress) dari suatu plan bisa dihitung dan ditampilkan dengan mudah tanpa perlu menulis logika berulang di bagian lain (seperti UI). Plan menjadi model yang lebih informatif dan mandiri, karena tidak hanya menyimpan data tugas, tetapi juga bisa menghitung status penyelesaiannya
 
 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 
