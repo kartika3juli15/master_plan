@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import '../models/data_layer.dart';
 
-class PlanProvider extends InheritedNotifier<ValueNotifier<Plan>> {
+class PlanProvider extends InheritedNotifier<ValueNotifier<List<Plan>>> {
   const PlanProvider({
     super.key,
+    required ValueNotifier<List<Plan>> notifier,
     required Widget child,
-    required ValueNotifier<Plan> notifier,
-  }) : super(child: child, notifier: notifier);
+  }) : super(notifier: notifier, child: child);
 
-  static ValueNotifier<Plan> of(BuildContext context) {
-    return context
-        .dependOnInheritedWidgetOfExactType<PlanProvider>()!
-        .notifier!;
+  static ValueNotifier<List<Plan>> of(BuildContext context) {
+    final provider = context.dependOnInheritedWidgetOfExactType<PlanProvider>();
+    assert(provider != null, 'No PlanProvider found in context');
+    return provider!.notifier!;
   }
 }
