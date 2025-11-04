@@ -176,7 +176,22 @@ perbaikan 2 : kemudian inisiasikan import pada main `plan_screen.dart`
 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada yang error atau tidak berjalan dengan baik, silakan diperbaiki sesuai dengan tujuan aplikasi tersebut dibuat.  
 
 2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
+= Gambar diagram tersebut menunjukkan perpindahan halaman (navigasi) dalam aplikasi Flutter menggunakan Navigator.push.
+- Bagian kiri (biru) menggambarkan halaman awal, yaitu PlanCreatorScreen, tempat pengguna membuat rencana (input melalui TextField, lalu daftar ditampilkan di ListView).
+- Bagian kanan (hijau) menunjukkan halaman tujuan, yaitu PlanScreen, yang muncul setelah pengguna menekan tombol dan aplikasi memanggil Navigator.push.
+
+Pada halaman baru (PlanScreen):
+- Menggunakan Scaffold sebagai struktur utama
+- Menampilkan daftar tugas (ListView) di dalam Expanded
+- teks ringkasan kemajuan di dalam SafeArea.
+
+secara keseluruhan diagram ini menjelaskan alur navigasi dari layar pembuatan rencana ke layar tampilan rencana menggunakan Navigator.push, yang mengganti widget tree dari struktur PlanCreatorScreen ke PlanScreen.
+![week 10](images/28.png)
 
 3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+= pada gambar pertama menunjukkan pembuatan plan yang dilakukan secara keseluruhan
+![week 10](images/26.png)
+pada gambar kedua adalah komponen atau tahapan pada plan yang dibuat sebelumnya
+![week 10](images/27.png)
 
 4. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke dosen yang telah disepakati !  
